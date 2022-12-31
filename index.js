@@ -10,6 +10,10 @@ app.use(cors({
     credentials: true
 }));
 
+app.get("/", (req, res) => {
+    res.send("its working");
+})
+
 
 app.post("/", (req, res) => {
     const name = req.body.name;
