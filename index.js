@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(cors({
-    origin: "https://temp-frontend.onrender.com/",
+    origin: "https://temp-frontend.onrender.com",
     credentials: true
 }));
 
@@ -22,6 +22,7 @@ app.post("/", (req, res) => {
     console.log(name);
 
     res.cookie('name', name, {
+        secure: true,
         httpOnly: true
     });
 
