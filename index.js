@@ -22,7 +22,6 @@ app.post("/", (req, res) => {
     console.log(name);
 
     res.cookie('name', name, {
-        signed: true,
         secure: true,
         httpOnly: true,
         maxAge: 360000000
