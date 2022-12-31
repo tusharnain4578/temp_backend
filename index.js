@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(cors({
-    origin: "https://temp-frontend.onrender.com",
+    origin: "https://temp-frontend.onrender.com/",
     credentials: true
 }));
 
