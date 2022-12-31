@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 })
 
 
-app.post("/", (req, res) => {
+app.post("/ck", (req, res) => {
     const name = req.body.name;
 
     console.log(name);
